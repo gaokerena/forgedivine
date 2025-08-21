@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font importation -->
+      <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+      <link href="https://fonts.cdnfonts.com/css/baron-neue" rel="stylesheet">
+  <!-- Enf of font importation -->
+
+  <title>Forge divine</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="body_one">
+
+  <!-- Banner 
+    <div id="banner">
+      <h1>FoRGE DIvINE</h1>
+    </div>
+  -->
+<div id="banner"> 
+  <img src="https://drive.google.com/thumbnail?id=1SL8VKcB4XhLTX4Ov1sBBGIdSXv5ua8aP&sz=s600" />
+</div>
+
+<!-- Dice roller -->
+<div id="dice">
+  <!-- Left: Result + modifiers -->
+  <div class="dice-result">
+    <div class="dice-details">
+      <div class="dice-roll">Lancer :</div>
+      <div class="dice-modifier">Caractéristiques :</div>
+      <div class="dice-equipment">Equipement :</div>
+      <div class="dice-wound">Blessure :</div>
+    </div>
+    <div class="dice-total"></div>
+  </div>
+
+  <!-- Right: Selector + throw -->
+  <div class="dice-controls">
+    <select id="dice-stat" class="input_field">
+      <option value="Générique">Générique</option>
+      <option value="Force">Force</option>
+      <option value="Grâce">Grâce</option>
+      <option value="Charme">Charme</option>
+      <option value="Ingéniosité">Ingéniosité</option>
+    </select>
+    <div class="dice-throw input_field">Lancer les dés</div>
+  </div>
+</div>
+
+
+
+
+  <!-- Character Section -->
+    <h2>Personnage</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container">
+    <div class="input">
+      <label class="input_label">Nom</label><input type="text" class="input_field" id="name"/>
+    </div>
+    <div class="input">
+      <label class="input_label">Divinité</label> <input type="text" class="input_field" id="divinity"/>
+    </div>
+    <div class="input">
+      <label class="input_label">Compagnon</label> <input type="text" class="input_field" id="companion"/>
+    </div>
+    <div class="input">
+      <label class="input_label">Argent</label>  
+      <span class="counter" id="money_value">0</span>
+      <span class="counter_button" id="increase_money">+</span>
+      <span class="counter_button" id="decrease_money">-</span>
+    </div>
+  </div>
+
+  <!-- Specs Section -->
+    <h2>Caractéristiques</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container">
+    <div class="input">
+      <label class="input_label">Force</label>
+      <span class="counter" id="str_value">0</span>
+      <span class="counter_button" id="increase_str">+</span>
+      <span class="counter_button" id="decrease_str">-</span>
+    </div>
+    <div class="input">
+      <label class="input_label">Grâce</label>
+      <span class="counter" id="dex_value">0</span>
+      <span class="counter_button" id="increase_dex">+</span>
+      <span class="counter_button" id="decrease_dex">-</span>
+    </div>
+    <div class="input">
+      <label class="input_label">Charme</label>
+      <span class="counter" id="charm_value">0</span>
+      <span class="counter_button" id="increase_charm">+</span>
+      <span class="counter_button" id="decrease_charm">-</span>
+    </div>
+    <div class="input">
+      <label class="input_label">Ingéniosité</label>
+      <span class="counter" id="int_value">0</span>
+      <span class="counter_button" id="increase_int">+</span>
+      <span class="counter_button" id="decrease_int">-</span>
+    </div>
+  </div>
+
+
+  <!-- Exp section -->
+    <h2>Expérience</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container">
+    <div class="input">
+      <label class="input_label">Gloire</label>
+      <input type="text" class="input_field" id="glory" />
+    </div>
+    <div class="input">
+      <span class="status">Blessure</span>
+      <div class="status_container" id="wound">
+        <span class="status_text"></span>
+      </div>
+    </div>
+    <div class="input">
+      <label class="input_label">Cicatrices</label>
+      <input type="text" class="input_field" id="scars" />
+    </div>
+  </div>
+
+  <!-- Boons and curses -->
+
+    <h2>Bénédictions</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container" id="boons">
+
+  </div>
+
+    <h2> Malédictions</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container" id="curses">
+
+  </div>
+
+  <!-- Titles -->
+
+    <h2>Titres</h2>
+    <span class="h2-line"></span>
+    
+  <div class="grid-container" id="titles">
+
+  </div>
+
+</div>
+
+<div id="body_two">
+
+    <!-- Equipment section -->
+    <h2>Possessions</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container" id="equipment">
+  </div>
+
+</div>
+
+<div id="body_three">
+
+<!-- Saving -->
+
+    <h2>Position</h2>
+    <span class="h2-line"></span>
+
+  <div class="grid-container">
+    <div class="input">
+      <select class="select_modfield" id="book-select">
+        <option value="notos">Livre - Notos</option>
+        <option value="hades">Livre - Hadès</option>
+      </select>
+    </div>
+    <div class="input">
+      <label class="input_label">Position</label>
+      <input type="text" class="input_field" id="position" />
+    </div>
+  </div>
+
+  <!-- Codes Notos -->
+  <h2>Codes Notos</h2>
+  <span class="h2-line"></span>
+  <div class="codes-grid" id="notos-codes"></div>
+
+  <!-- Codes Hadès -->
+  <h2>Codes Hadès</h2>
+  <span class="h2-line"></span>
+  <div class="codes-grid" id="hades-codes"></div>
+
+</div>
+
+<div id="body_four">
+
+  <h2>Notes personnelles</h2>
+  <span class="h2-line"></span>
+
+  <div class="notes-container">
+    <textarea id="personal-notes" class="input_field notes-field" placeholder="Écrivez vos notes ici…"></textarea>
+  </div>  
+
+</div>
+
+<div id="shownotes">
+  <h3 id="show_body_one">Personnage</h3>
+  <h3 id="show_body_two">Equipement</h3>
+  <h3 id="show_body_three">Sauvegarde</h3>
+  <h3 id="show_body_four">Notes</h3>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
