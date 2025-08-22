@@ -24,34 +24,33 @@
   <img src="https://drive.google.com/thumbnail?id=1SL8VKcB4XhLTX4Ov1sBBGIdSXv5ua8aP&sz=s600" />
 </div>
 
-<!-- Dice roller -->
-<div id="dice">
-  <!-- Left: Result + modifiers -->
-  <div class="dice-result">
-    <div class="dice-details">
-      <div class="dice-roll">Lancer :</div>
-      <div class="dice-modifier">Caractéristiques :</div>
-      <div class="dice-equipment">Equipement :</div>
-      <div class="dice-wound">Blessure :</div>
+  <!-- Dice roller -->
+  <div class="grid-container">
+    <div id="dice">
+      <!-- Left: Result + modifiers -->
+      <div class="dice-result">
+        <div class="dice-details">
+          <div class="dice-roll">Lancer :</div>
+          <div class="dice-modifier">Caractéristiques :</div>
+          <div class="dice-equipment">Equipement :</div>
+          <div class="dice-wound">Blessure :</div>
+        </div>
+        <div class="dice-total"></div>
+      </div>
+    
+      <!-- Right: Selector + throw -->
+      <div class="dice-controls">
+        <select id="dice-stat" class="input_field">
+          <option value="Générique">Générique</option>
+          <option value="Force">Force</option>
+          <option value="Grâce">Grâce</option>
+          <option value="Charme">Charme</option>
+          <option value="Ingéniosité">Ingéniosité</option>
+        </select>
+        <div class="dice-throw input_field">Lancer les dés</div>
+      </div>
     </div>
-    <div class="dice-total"></div>
   </div>
-
-  <!-- Right: Selector + throw -->
-  <div class="dice-controls">
-    <select id="dice-stat" class="input_field">
-      <option value="Générique">Générique</option>
-      <option value="Force">Force</option>
-      <option value="Grâce">Grâce</option>
-      <option value="Charme">Charme</option>
-      <option value="Ingéniosité">Ingéniosité</option>
-    </select>
-    <div class="dice-throw input_field">Lancer les dés</div>
-  </div>
-</div>
-
-
-
 
   <!-- Character Section -->
     <h2>Personnage</h2>
@@ -105,7 +104,6 @@
       <span class="counter_button" id="decrease_int">-</span>
     </div>
   </div>
-
 
   <!-- Exp section -->
     <h2>Expérience</h2>
