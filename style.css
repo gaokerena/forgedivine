@@ -1,23 +1,13 @@
-/* Banner */
+/* Banner section */
 #banner {
   padding-bottom: 10px;
   text-align: center;
 }
 
-#banner h1 {
-  background-color: #ffc72c;
-  font-family: 'Baron Neue';
-  color: #a13f39;
-  text-align: center;
-  padding: clamp(10px, 3vw, 20px) 0;
-  margin: 0 0 20px 0;
-  font-size: clamp(1.5rem, 6vw, 3rem);
-}
-
 /* Dice section */
 #dice {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 20px;
   gap: 10px;
 }
