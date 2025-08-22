@@ -1,7 +1,31 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 20px;
+}
+
+#body_one,
+#body_two,
+#body_three {
+  padding-bottom: 10%;
+}
+
 /* Banner section */
 #banner {
   padding-bottom: 10px;
   text-align: center;
+}
+
+/* Grid containers */
+.grid-container,
+.codes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: solid 2px purple;
 }
 
 /* Dice section */
@@ -74,19 +98,6 @@
   font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
-/* General body styling */
-body {
-  font-family: Arial, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  margin: 20px;
-}
-
-#body_one,
-#body_two,
-#body_three {
-  padding-bottom: 10%;
-}
-
 /* Section titles */
 h2 {
   display: inline-block;
@@ -119,19 +130,6 @@ h3 {
   color: #12343f;
   background-color: #ffc72c;
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
-}
-
-/* Grid containers */
-.grid-container,
-.codes-grid {
-  display: grid;
-  padding-top: 35px;
-  padding-bottom: 20px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 15px;
-  background-color: #ffffff;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .input {
