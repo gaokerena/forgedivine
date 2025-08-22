@@ -76,7 +76,7 @@ function getWoundModifier() {
   return woundEl && woundEl.classList.contains("active") ? -1 : 0;
 }
 
-document.querySelector(".dice-throw").addEventListener("click", () => {
+document.getElementById("dice-throw").addEventListener("click", () => {
   const stat = document.getElementById("dice-stat").value;
   const d1 = Math.floor(Math.random() * 6) + 1;
   const d2 = Math.floor(Math.random() * 6) + 1;
@@ -86,17 +86,17 @@ document.querySelector(".dice-throw").addEventListener("click", () => {
   const woundMod = getWoundModifier();
   const total = d1 + d2 + statMod + equipMod + woundMod;
 
-  document.querySelector(".dice-roll").textContent = `Lancer : ${d1} + ${d2} = ${d1 + d2}`;
-  document.querySelector(".dice-modifier").textContent = `Caractéristiques : ${statMod}`;
-  document.querySelector(".dice-equipment").textContent = `Equipement : ${equipMod}`;
-  document.querySelector(".dice-wound").textContent = `Blessure : ${woundMod}`;
+  document.getElementById("dice-roll").textContent = `Lancer : ${d1} + ${d2} = ${d1 + d2}`;
+  document.getElementById("dice-modifier").textContent = `Caractéristiques : ${statMod}`;
+  document.getElementById("dice-equipment").textContent = `Equipement : ${equipMod}`;
+  document.getElementById("dice-wound").textContent = `Blessure : ${woundMod}`;
 
   if (d1 === 1 && d2 === 1) {
-    document.querySelector(".dice-total").textContent = "Epic fail !";
+    document.getElementById("dice-total").textContent = "Epic fail !";
   } else if (d1 === 6 && d2 === 6) {
-    document.querySelector(".dice-total").textContent = "Epic win !";
+    document.getElementById("dice-total").textContent = "Epic win !";
   } else {
-    document.querySelector(".dice-total").textContent = `Total : ${total}`;
+    document.getElementById("dice-total").textContent = `Total : ${total}`;
   }
 });
 
