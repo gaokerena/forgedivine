@@ -23,7 +23,7 @@ body {
   display: grid;
   box-sizing: border-box;
   width: 100%;
-  grid-template-columns: repeat(2, minmax(750px, 1fr));
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
   gap: 15px;
   justify-content: center;
   align-items: center;
