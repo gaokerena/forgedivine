@@ -1,7 +1,3 @@
-html {
-  font-size: 16px;
-}
-
 /* Banner */
 #banner {
   padding-bottom: 10px;
@@ -123,9 +119,9 @@ h2::first-letter {
 
 h3 {
   display: inline-block;
-  padding: 10px 40px 10px 40px;
+  padding: 20px 50px 20px 50px;
   font-family: 'Baron Neue';
-  font-size: 0.8em;
+  font-size: 1em;
   color: #12343f;
   background-color: #ffc72c;
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
@@ -464,6 +460,7 @@ select {
 
 #book-select {
   width: 60%;
+  margin-top: 0;
 }
 
 /* Checked state keeps hover background */
@@ -499,7 +496,7 @@ select {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 5%;
+  height: 10%;
   background-color: #f8f8f8;
   border-top: 1px solid #ccc;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
