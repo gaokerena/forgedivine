@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const counter = document.getElementById(stat+"_value");
       if(!counter) return;
       let value = parseInt(counter.textContent)||0;
-      value = btn.id.startsWith("increase") ? value+1 : Math.max(0,value-1);
+      value = btn.id.startsWith("increase") ? value+1 : value-1;
       counter.textContent = value;
       counter.dispatchEvent(new Event('input'));
     });
