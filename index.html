@@ -26,30 +26,28 @@
 
   <!-- Dice roller -->
   <div class="grid-container">
-    <div id="dice">
-      <!-- Left: Result + modifiers -->
-      <div class="dice-result">
-        <div class="dice-details">
-          <div class="dice-roll">Lancer :</div>
-          <div class="dice-modifier">Caractéristiques :</div>
-          <div class="dice-equipment">Equipement :</div>
-          <div class="dice-wound">Blessure :</div>
+         <!-- Left: Result + modifiers -->
+      <div id="dice-result">
+        <div id="dice-details">
+          <div id="dice-roll">Lancer :</div>
+          <div id="dice-modifier">Caractéristiques :</div>
+          <div id="dice-equipment">Equipement :</div>
+          <div id="dice-wound">Blessure :</div>
         </div>
-        <div class="dice-total"></div>
+        <div id="dice-total"></div>
       </div>
     
       <!-- Right: Selector + throw -->
-      <div class="dice-controls">
-        <select id="dice-stat" class="input_field">
+      <div id="dice-controls">
+        <select id="dice-stat" class="large_dropdown">
           <option value="Générique">Générique</option>
           <option value="Force">Force</option>
           <option value="Grâce">Grâce</option>
           <option value="Charme">Charme</option>
           <option value="Ingéniosité">Ingéniosité</option>
         </select>
-        <div class="dice-throw input_field">Lancer les dés</div>
+        <div class="large_button" id="dice-throw">Lancer les dés</div>
       </div>
-    </div>
   </div>
 
   <!-- Character Section -->
