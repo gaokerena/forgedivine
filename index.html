@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+  <!-- meta name="viewport" content="width=device-width, initial-scale=1.0" -->
 
   <!-- Font importation -->
       <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,36 +19,44 @@
 <body>
 
 <div id="body_one">
-<!--
+
+  <!-- Banner 
+    <div id="banner">
+      <h1>FoRGE DIvINE</h1>
+    </div>
+  -->
 <div id="banner"> 
   <img src="https://drive.google.com/thumbnail?id=1SL8VKcB4XhLTX4Ov1sBBGIdSXv5ua8aP&sz=s600" />
 </div>
--->
-  <!-- Dice roller -->
-    <div id="dice">
-         <!-- Top : Result + modifiers -->
-      <div id="dice-result">
-        <div id="dice-details">
-          <div id="dice-roll">Lancer :</div>
-          <div id="dice-modifier">Caractéristiques :</div>
-          <div id="dice-equipment">Equipement :</div>
-          <div id="dice-wound">Blessure :</div>
-        </div>
-        <div id="dice-total"></div>
-      </div>
-    
-      <!-- Bottom : Selector + throw -->
-      <div id="dice-controls">
-        <select id="dice-stat" class="large_dropdown">
-          <option value="Générique">Générique</option>
-          <option value="Force">Force</option>
-          <option value="Grâce">Grâce</option>
-          <option value="Charme">Charme</option>
-          <option value="Ingéniosité">Ingéniosité</option>
-        </select>
-        <div class="large_button" id="dice-throw">Lancer les dés</div>
-      </div>
+
+<!-- Dice roller -->
+<div id="dice">
+  <!-- Left: Result + modifiers -->
+  <div class="dice-result">
+    <div class="dice-details">
+      <div class="dice-roll">Lancer :</div>
+      <div class="dice-modifier">Caractéristiques :</div>
+      <div class="dice-equipment">Equipement :</div>
+      <div class="dice-wound">Blessure :</div>
+    </div>
+    <div class="dice-total"></div>
   </div>
+
+  <!-- Right: Selector + throw -->
+  <div class="dice-controls">
+    <select id="dice-stat" class="input_field">
+      <option value="Générique">Générique</option>
+      <option value="Force">Force</option>
+      <option value="Grâce">Grâce</option>
+      <option value="Charme">Charme</option>
+      <option value="Ingéniosité">Ingéniosité</option>
+    </select>
+    <div class="dice-throw input_field">Lancer les dés</div>
+  </div>
+</div>
+
+
+
 
   <!-- Character Section -->
     <h2>Personnage</h2>
@@ -72,7 +80,7 @@
     </div>
   </div>
 
-  <!-- Specs Section --> 
+  <!-- Specs Section -->
     <h2>Caractéristiques</h2>
     <span class="h2-line"></span>
 
@@ -103,6 +111,7 @@
     </div>
   </div>
 
+
   <!-- Exp section -->
     <h2>Expérience</h2>
     <span class="h2-line"></span>
@@ -124,7 +133,7 @@
     </div>
   </div>
 
-  <!-- Boons and curses --> 
+  <!-- Boons and curses -->
 
     <h2>Bénédictions</h2>
     <span class="h2-line"></span>
@@ -140,7 +149,7 @@
 
   </div>
 
-  <!-- Titles --> 
+  <!-- Titles -->
 
     <h2>Titres</h2>
     <span class="h2-line"></span>
@@ -153,7 +162,7 @@
 
 <div id="body_two">
 
-    <!-- Equipment section --> 
+    <!-- Equipment section -->
     <h2>Possessions</h2>
     <span class="h2-line"></span>
 
@@ -164,7 +173,7 @@
 
 <div id="body_three">
 
-<!-- Saving --> 
+<!-- Saving -->
 
     <h2>Position</h2>
     <span class="h2-line"></span>
@@ -182,7 +191,7 @@
     </div>
   </div>
 
-  <!-- Codes Notos --> 
+  <!-- Codes Notos -->
   <h2>Codes Notos</h2>
   <span class="h2-line"></span>
   <div class="codes-grid" id="notos-codes"></div>
@@ -211,6 +220,7 @@
   <h3 id="show_body_three">Sauvegarde</h3>
   <h3 id="show_body_four">Notes</h3>
 </div>
+
   <script src="script.js"></script>
 
 </body>
